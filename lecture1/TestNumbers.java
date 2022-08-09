@@ -41,7 +41,9 @@ public class TestNumbers {
         int s = remainingsOf1Hr % 60;
 
 
-        return (m<10 && s<10)? (h + ":0" + m + ":0" + s) : (h + ":" + m + ":" + s);
+        return  String.format("%02d", h) + ":" + String.format("%02d", m) + ":" + String.format("%02d", s);
+
+             //   (m<10 && s<10)? (h + ":0" + m + ":0" + s) : (h + ":" + m + ":" + s);
 
     }
 
