@@ -1,10 +1,11 @@
 package com.epam;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArraysTest {
     public static void main(String[] args) {
-//        example1();
+        example1();
 //        example2();
 //        example3();
         example4();
@@ -15,15 +16,23 @@ public class ArraysTest {
         String[] seasons = new String[4]; // creating an array
 
         // initializing of the array
-        seasons[0] = "Winter";
-        seasons[1] = "Spring";
-        seasons[2] = "Summer";
-        seasons[3] = "Autumn";
+      //  seasons[0] = "Winter";
+     //   seasons[1] = "Spring";
+    //    seasons[2] = "Summer";
+    //    seasons[3] = "Autumn";
 //        String[] seasons  = new String[] {"Winter", "Spring", "Summer", "Autumn"};
 
+//           V1=no Scanner
+      //  for (int i = 0; i < seasons.length; i++) {
+       //     System.out.println(seasons[i]);
+      //  }
+//!!!!!!!!!!! V2 = Scanner
+        Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < seasons.length; i++) {
+            seasons[i]=scanner.nextLine();
             System.out.println(seasons[i]);
         }
+
     }
 
     private static void example2() {
