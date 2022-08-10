@@ -25,12 +25,13 @@ public class BooleanExpressions {
     }
 
     private static void example2() {
+        //+!!!ORDER of operations
         //from the left to right
         // 2 + 2 * 2 = ?
         // && -> *
         // || -> +
         // (2 + 2) * 2 = ?
-        // ! - the last one
+        // ! - the last one +to apply
 
         System.out.println(true || false || false && false && (true || false)); // true
         System.out.println(!(false && false || true || true && false)); // false
@@ -43,7 +44,7 @@ public class BooleanExpressions {
         if (count == total) {
             System.out.println("Same");
         } else {
-            System.out.println("Not the same");
+            System.out.println("Not the same"); // output: Not the same
         }
     }
 

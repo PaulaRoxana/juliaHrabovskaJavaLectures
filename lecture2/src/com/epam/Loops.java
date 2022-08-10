@@ -7,10 +7,10 @@ import static java.util.Arrays.asList;
 
 public class Loops {
     public static void main(String[] args) {
-//                example1();
-//                example2();
-//                example3();
-                example4();
+    //           example1();
+//              example2();
+  //              example3();
+               example4();
     }
 
     private static void example1() {
@@ -49,7 +49,7 @@ public class Loops {
     }
 
     private static void example3() {
-        int x = 10;
+     //  int x = 10;
         Scanner scanner = new Scanner(System.in);
         String result;
         do {

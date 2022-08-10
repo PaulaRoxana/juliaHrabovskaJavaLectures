@@ -52,8 +52,8 @@ public class ArraysTest {
 //                                {7,0,1,12},
 //                                {8,1,2,3}};
 
-        for (int i = 0; i < 3; i++) { // rows
-            for (int j = 0; j < 4; j++) { // columns
+        for (int i = 0; i < 3; i++) { // this LOOP goes BY rows
+            for (int j = 0; j < 4; j++) { // this LOOP goes BY columns
                 System.out.print(" " + twoDimArray[i][j] + " ");
             }
             System.out.println(); // new line for printing it as a table
@@ -64,8 +64,8 @@ public class ArraysTest {
 
     private static void example4() {
         int [][] twoDimArray = {{5,7,3,17}, {7,0,1,12}, {8,1,2,3}};
-        System.out.println(twoDimArray.length);
-        System.out.println(twoDimArray[0].length);
+        System.out.println(twoDimArray.length);//the number of rows
+        System.out.println(twoDimArray[0].length);//the number of columns
     }
 
     private static void example5() {

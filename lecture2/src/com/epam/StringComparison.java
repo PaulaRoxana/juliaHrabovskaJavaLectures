@@ -2,9 +2,9 @@ package com.epam;
 
 public class StringComparison {
     public static void main(String[] args) {
-//        example1();
-//        example2();
-//        example3();
+   //   example1();
+   //    example2();
+  // example3();
         example4();
     }
 
@@ -43,5 +43,6 @@ public class StringComparison {
         System.out.println("I".compareTo("J"));
         System.out.println("I".compareTo("A"));
         System.out.println("J".compareTo("I"));
+
     }
 }

@@ -5,7 +5,7 @@ public class IfElse {
     public static void main(String[] args) {
 //        example1();
 //        example2();
-//        example3();
+        example3();
         example4();
     }
 
@@ -34,7 +34,7 @@ public class IfElse {
     }
 
     private static void example3() { // multiple statements, else if
-        int count = 5;
+        int count = 3;
         int total = 0;
 
         if (count < 3) {
@@ -45,8 +45,7 @@ public class IfElse {
 //            count--;
         } else {
             total = total - count;
-            count = count + 1;
-//            count++;
+  //          count = count + 1; <=>  count++;
         }
         System.out.println(total);
     }

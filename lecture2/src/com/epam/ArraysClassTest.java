@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class ArraysClassTest {
     public static void main(String[] args) {
-//        example1();
-        example2();
-//        example3();
-//        example4();
+     //   example1();
+        //    example2();
+        //example3();
+             example4();
     }
 
     private static void example1() {
@@ -15,7 +15,7 @@ public class ArraysClassTest {
 
         Arrays.sort(numbers);
 
-        System.out.println(numbers);
+        System.out.println(numbers); //[I@58372a00 - it prints a memory address
         System.out.println(Arrays.toString(numbers));
     }
 
