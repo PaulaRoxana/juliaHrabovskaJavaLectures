@@ -2,7 +2,7 @@ package com.epam;
 
 import java.util.Scanner;
 
-public class MaxValueInSeq {
+public class PaulaMaxValueInSeq {
 
     /* Task 5 "Max Value In Sequence"
 The purpose of this exercise is to train you to use simple loops and conditional statements.

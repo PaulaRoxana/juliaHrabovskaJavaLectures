@@ -1,11 +1,8 @@
 package com.epam;
 
-import java.io.BufferedReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-public class Lecture2Practice {
+public class PaulaLecture2Practice {
 
     public static void main(String[] args) {
 

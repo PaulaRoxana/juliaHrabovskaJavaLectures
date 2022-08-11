@@ -18,7 +18,7 @@ Input: 12 8
 Output:3
 */
 
-public class PizzaSplit {
+public class PaulaPizzaSplit {
 
     public static void main(String[] args) {
 

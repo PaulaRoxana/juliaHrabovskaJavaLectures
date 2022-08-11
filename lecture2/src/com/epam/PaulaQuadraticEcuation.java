@@ -1,9 +1,8 @@
 package com.epam;
 
 import java.util.Scanner;
-import static java.lang.Math.sqrt;
 
-public class QuadraticEcuation {
+public class PaulaQuadraticEcuation {
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);

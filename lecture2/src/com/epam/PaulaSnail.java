@@ -2,7 +2,7 @@ package com.epam;
 
 import java.util.Scanner;
 
-public class Snail {
+public class PaulaSnail {
 
     public static void main(String[] args) {
         /*Task 3 "Snail":

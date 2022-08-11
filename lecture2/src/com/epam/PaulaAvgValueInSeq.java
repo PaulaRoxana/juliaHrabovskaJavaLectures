@@ -2,7 +2,7 @@ package com.epam;
 
 import java.util.Scanner;
 
-public class AvgValueInSeq {
+public class PaulaAvgValueInSeq {
 
     /* Task 6 "Average"
 The purpose of this exercise is to train you to use simple loops and conditional statements.
