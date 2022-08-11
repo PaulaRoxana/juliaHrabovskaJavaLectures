@@ -1,8 +1,8 @@
-package com.epam;
+package com.epam.practice;
 
 import java.util.Scanner;
 
-public class PaulaSnail {
+public class PRSnail {
 
     public static void main(String[] args) {
         /*Task 3 "Snail":

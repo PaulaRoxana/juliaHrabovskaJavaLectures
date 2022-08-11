@@ -1,4 +1,4 @@
-package com.epam;
+package com.epam.practice;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ Input: 12 8
 Output:3
 */
 
-public class PaulaPizzaSplit {
+public class PRPizzaSplit {
 
     public static void main(String[] args) {
 

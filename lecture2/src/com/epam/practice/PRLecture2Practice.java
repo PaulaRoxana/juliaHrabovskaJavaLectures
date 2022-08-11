@@ -1,8 +1,8 @@
-package com.epam;
+package com.epam.practice;
 
 import java.util.Scanner;
 
-public class PaulaLecture2Practice {
+public class PRLecture2Practice {
 
     public static void main(String[] args) {
 

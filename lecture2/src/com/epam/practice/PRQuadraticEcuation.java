@@ -1,8 +1,8 @@
-package com.epam;
+package com.epam.practice;
 
 import java.util.Scanner;
 
-public class PaulaQuadraticEcuation {
+public class PRQuadraticEcuation {
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);

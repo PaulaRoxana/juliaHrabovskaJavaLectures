@@ -1,23 +1,24 @@
-package com.epam;
+package com.epam.practice;
 
 import java.util.Scanner;
 
-public class PaulaAvgValueInSeq {
+public class PRMaxValueInSeq {
 
-    /* Task 6 "Average"
+    /* Task 5 "Max Value In Sequence"
 The purpose of this exercise is to train you to use simple loops and conditional statements.
 Estimated workload of this exercise is 20 minutes.
 Description
-Please, proceed to Average class and write a program that reads a sequence of integer values from standard input and finds the average value.
+Please, proceed to FindMaxInSeq and write a program that reads a sequence of integer values from standard output and finds the maximum value. You must place your solution into the max method to pass tests.
 Details:
 You must read sequence values until the next one is 0. Zero value means end of the input sequence.
 The sequence is guaranteed to contain at least one value.
-Average value is also an integer. Use integer operations.
+Example
+Input: 2 4 6 9 2 4 5 0
+Output:9
 */
-    public static int avg() {
+    public static int max() {
 
-        int total = 0;
-        int counter = 0;
+        int largest = Integer.MIN_VALUE;
         int number;
         Scanner scanner = new Scanner(System.in);
         do {
@@ -25,16 +26,15 @@ Average value is also an integer. Use integer operations.
             if (number == 0) {
                 break;
             }
-            if (true) {
-                total = total+number;
-                counter++;
+            if (number > largest) {
+                largest = number;
             }
         }
         while (number != 0);
-        return total/counter;
+        return largest;
     }
 
     public static void main(String[] args) {
-        System.out.println(avg());
+        System.out.println(max());
     }
 }

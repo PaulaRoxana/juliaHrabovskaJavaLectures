@@ -1,4 +1,4 @@
-package com.epam;
+package com.epam.practice;
 
 public class CBMakeBricks {
     public static void main(String[] args) {
