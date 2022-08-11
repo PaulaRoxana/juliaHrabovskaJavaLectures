@@ -58,7 +58,7 @@ Output: Oh, it looks like there is no one here
 Input:-3
 Output: Seriously? Why so negative?*/
 
-        Scanner scannerB = new Scanner(System.in);
+     /*   Scanner scannerB = new Scanner(System.in);
         int noOfPeople = scannerB.nextInt();
 
         if (noOfPeople == 0) {
@@ -75,6 +75,8 @@ Output: Seriously? Why so negative?*/
             }
 
         }
+
+      */
 
 
 /*Task 3 "Snail":
@@ -106,8 +108,24 @@ Input: 4   4    1
 Output: 1
 */
 
+        int a;
+        int b;
+        int h;
+
+        int[] inputs = new int[3];
+        Scanner scannerABH = new Scanner(System.in);
+        for (int i = 0; i < inputs.length; i++) {
+            int counter=0;
+            inputs[i] = scannerABH.nextInt();
+            if (inputs[1] >= inputs[0] && inputs[2] > inputs[0]) {
+                System.out.println("Impossible");
+            }
+
+            }
+
+        }
 
     }
 
 
-}
+
