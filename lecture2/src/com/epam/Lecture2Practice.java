@@ -1,5 +1,8 @@
 package com.epam;
 
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Lecture2Practice {
@@ -143,17 +146,11 @@ Output: 1
         /*Task 4 "Go Dutch":
 The purpose of this exercise is to familiarize you with basic conditional and cyclic operations.
 Estimated workload of this exercise is 20 minutes.
-
-
 Description
 Consider a company of friends visiting a restaurant. They decided to equally split the bill.
-
 Friends decided to add 10 percent of the bill total amount as tips. Then they cover the total payment in equal parts.
-
 Please, proceed to GoDutch class and write a program that reads a bill total amount and a number of friends, and then prints part to pay.
-
 Consider some details:
-
 Program must read data from System.in
 Bill total amount cannot be negative. If input value is negative, the program stops, printing: Bill total amount cannot be negative
 Number of friends cannot be negative or zero. If input value is, then the program stops, printing: Number of friends cannot be negative or zero
@@ -161,17 +158,57 @@ Bill total amount, number of friends and part to pay are integers
 
 Example
 Input:
-
 1000
 5
-Output:
+Output:220
+*/
 
-220*/
-
+   /*     Scanner scanner = new Scanner(System.in);
+        int noOfFriends = scanner.nextInt();
+        int billToShare = scanner.nextInt();
+        if (billToShare <= 0) {
+            System.out.println("Bill total amount cannot be negative");
+        } else if (noOfFriends <= 0) {
+            System.out.println("Number of friends cannot be negative or zero");
+        } else {
+            int tip = billToShare * 10 / 100;
+            System.out.println((billToShare + tip) / noOfFriends);
+        }
+*/
+        System.out.println(max());
 
     }
 
-}
+    /* Task 5 "Max Value In Sequence"
+The purpose of this exercise is to train you to use simple loops and conditional statements.
+Estimated workload of this exercise is 20 minutes.
+Description
+Please, proceed to FindMaxInSeq and write a program that reads a sequence of integer values from standard output and finds the maximum value. You must place your solution into the max method to pass tests.
+Details:
+You must read sequence values until the next one is 0. Zero value means end of the input sequence.
+The sequence is guaranteed to contain at least one value.
+Example
+Input: 2 4 6 9 2 4 5 0
+Output:9
+*/
+          public static int max() {
+
+            int largest = Integer.MIN_VALUE;
+            int number;
+            Scanner scanner = new Scanner(System.in);
+            do {
+                number = scanner.nextInt();
+                if (number == 0) {
+                    break;
+                }
+                if (number > largest) {
+                    largest = number;
+                }
+            }
+            while (number != 0);
+            return largest;
+        }
+    }
 
 
 

@@ -34,7 +34,6 @@ Input: 4   4    1
 Output: 1
 */
 
-
         Scanner scannerABH = new Scanner(System.in);
         int[] inputs = new int[3];
         inputs[0] = scannerABH.nextInt();
@@ -51,6 +50,9 @@ Output: 1
         }
 
     }
+
+
+
 
 
 }
