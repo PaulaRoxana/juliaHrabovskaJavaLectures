@@ -27,6 +27,21 @@ Output: Access denied*/
         //      Scanner scanner2 = new Scanner(System.in);
         //    int seconds = scanner2.nextInt();
 
+        System.out.println("BEGINNING=================================================================================================");
+        /*
+        int PASSWORD = 133976;
+        Scanner scanner = new Scanner(System.in);
+        int password = scanner.nextInt();
+
+        if (password == PASSWORD) {
+            System.out.println("Hello, Agent");
+        }
+        else {
+            System.out.println("Access denied");
+        }
+*/
+        System.out.println("END====END====END=========================================================================================");
+
 /*Task 2 "Meet Strangers":
 The purpose of this exercise is to train you in usage of simple cycles and conditional statements.
 Estimated workload of this exercise is 20 minutes.
@@ -58,6 +73,7 @@ Output: Oh, it looks like there is no one here
 Input:-3
 Output: Seriously? Why so negative?*/
 
+        System.out.println("BEGINNING=================================================================================================");
      /*   Scanner scannerB = new Scanner(System.in);
         int noOfPeople = scannerB.nextInt();
 
@@ -71,13 +87,10 @@ Output: Seriously? Why so negative?*/
                 Scanner scannerA = new Scanner(System.in);
                 groupOfPeople[i] = scannerA.nextLine();
                 System.out.println("Hello," + " " + groupOfPeople[i]);
-
             }
-
         }
-
       */
-
+        System.out.println("END====END====END=========================================================================================");
 
 /*Task 3 "Snail":
 The purpose of this exercise is to train you in usage of simple integer operations.
@@ -107,7 +120,8 @@ Output: Impossible
 Input: 4   4    1
 Output: 1
 */
-
+        System.out.println("BEGINNING=================================================================================================");
+/*
         Scanner scannerABH = new Scanner(System.in);
         int[] inputs = new int[3];
         inputs[0] = scannerABH.nextInt();
@@ -123,9 +137,41 @@ Output: 1
             System.out.println(leftToClimb/climbedIn24H+1);
         }
 
-        }
+       */
+        System.out.println("END====END====END=========================================================================================");
+
+        /*Task 4 "Go Dutch":
+The purpose of this exercise is to familiarize you with basic conditional and cyclic operations.
+Estimated workload of this exercise is 20 minutes.
+
+
+Description
+Consider a company of friends visiting a restaurant. They decided to equally split the bill.
+
+Friends decided to add 10 percent of the bill total amount as tips. Then they cover the total payment in equal parts.
+
+Please, proceed to GoDutch class and write a program that reads a bill total amount and a number of friends, and then prints part to pay.
+
+Consider some details:
+
+Program must read data from System.in
+Bill total amount cannot be negative. If input value is negative, the program stops, printing: Bill total amount cannot be negative
+Number of friends cannot be negative or zero. If input value is, then the program stops, printing: Number of friends cannot be negative or zero
+Bill total amount, number of friends and part to pay are integers
+
+Example
+Input:
+
+1000
+5
+Output:
+
+220*/
+
 
     }
+
+}
 
 
 
