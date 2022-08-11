@@ -34,26 +34,24 @@ Input: 4   4    1
 Output: 1
 */
 
-        //  inta;
-        // intb;
-        //  inth;
 
-
-
+        Scanner scannerABH = new Scanner(System.in);
         int[] inputs = new int[3];
-        for (int i = 0; i < inputs.length; i++) {
-            Scanner scannerABH = new Scanner(System.in);
-            inputs[i] = scannerABH.nextInt();
-            int leftToClimb = inputs[2] - inputs[0];
-            int climbedIn24H = inputs[0] - inputs[1];
-            if (inputs[1] >= inputs[0] && inputs[2] > inputs[0]) {
-                System.out.println("Impossible");
-            } else if (inputs[2] <= inputs[0]) {
-                System.out.println(1);
-            }
-
+        inputs[0] = scannerABH.nextInt();
+        inputs[1] = scannerABH.nextInt();
+        inputs[2] = scannerABH.nextInt();
+        int leftToClimb = inputs[2] - inputs[0];
+        int climbedIn24H = inputs[0] - inputs[1];
+        if (inputs[1] >= inputs[0] && inputs[2] > inputs[0]) {
+            System.out.println("Impossible");
+        } else if (inputs[2] <= inputs[0]) {
+            System.out.println(1);
+        }else {
+            System.out.println(leftToClimb/climbedIn24H+1);
         }
 
-
     }
+
+
 }
+
