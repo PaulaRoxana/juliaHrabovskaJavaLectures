@@ -2,20 +2,20 @@ package com.epam.casting;
 
 class Shopping {
     public static void main(String[] args) {
-        Book book = new Book();
-        book.description();
-        ShoppingItem shoppingItem = book; // Implicit casting
+        Book book111 = new Book();
+        book111.description();
+        ShoppingItem shoppingItem = book111; // Implicit casting
         ShoppingItem shoppingItem1 = new Book(); // Implicit casting
         shoppingItem.description();
 
-        Printable printable = book; // Implicit casting
+        Printable printable = book111; // Implicit casting
         printable.print();
 
         Printable printable1 = new Book();
         ((Book) printable1).description(); // Explicit casting
 
         // ----------------------------------------------------
-        Object object = book;
+        Object object = book111;
         Object object1 = shoppingItem;
 
 //        ShoppingItem item = new ShoppingItem();

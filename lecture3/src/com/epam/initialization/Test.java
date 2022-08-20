@@ -8,14 +8,14 @@ public class Test {
     // Runs once (when the class is initialized)
     static {
         System.out.println("Static initialization");
-        staticVariable = 5;
+     //   staticVariable = 5;
     }
 
     // Instance initialization  block:
     // Runs each time you instantiate an object
     {
         System.out.println("Instance initialization");
-        nonStaticVariable = 7;
+     //   nonStaticVariable = 7;
     }
 
     public Test() {

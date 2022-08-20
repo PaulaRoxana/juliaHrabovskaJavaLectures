@@ -1,4 +1,4 @@
-package practice.nested_classes;
+package practice.nested.inner_nested_classes;
 
  class CPU {
     double price;

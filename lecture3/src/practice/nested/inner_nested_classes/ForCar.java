@@ -1,4 +1,4 @@
-package practice.nested_classes;
+package practice.nested.inner_nested_classes;
 
 
 class Car {
@@ -59,3 +59,13 @@ public class ForCar {
     }
 }
 
+/* Key Points to Remember
+1)Java treats the inner class as a regular member of a class.
+They are just like methods and variables declared inside a class.
+2)Since inner classes are members of the outer class, you can apply any access
+modifiers like private, protected to your inner class which is not possible in normal classes.
+3)Since the nested class is a member of its enclosing outer class, you can use the
+dot (.) notation to access the nested class and its members.
+4)Using the nested class will make your code more readable and provide better encapsulation.
+5)Non-static nested classes (inner classes) have access to other members of the outer/enclosing class,
+even if they are declared private.*/
