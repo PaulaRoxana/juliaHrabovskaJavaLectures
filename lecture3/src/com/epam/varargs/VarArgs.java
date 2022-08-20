@@ -3,29 +3,33 @@ package com.epam.varargs;
 public class VarArgs {
     class Calculator1 {
         int sum(int a, int b) {
-            return 1;
+            return a+b;
         }
 
         int sum(int a, int b, int c) {
-            return 1;
+            return a+b+c;
         }
 
         int sum(int a, int b, int c, int d) {
-            return 1;
+            return a+b+c+d;
         }
 
         int sum(int a, int b, int c, int d, int e) {
-            return 1;
+            return a+b+c+d+e;
         }
     }
 
-    static class Calculator2 {
+    static class Calculator2 { //!!array iteration
         int sum(int[] numbers) {
-            return 1;
+            int sumOfNumbers = 0;
+            for (int i = 0; i < numbers.length; i++) {
+              sumOfNumbers+=numbers[i];
+            }
+            return sumOfNumbers;
         }
     }
 
-    static class Calculator {
+    static class Calculator { //!!varargs iteration
         int sum(int... numbers) {
             int sum = 0;
             for (int i = 0; i < numbers.length; i++) {
@@ -48,13 +52,18 @@ public class VarArgs {
         arguments[6] = 8;
 
         int sum2 = calculator2.sum(arguments);
+        System.out.println(sum2);
 
 
         // varargs
         Calculator calculator = new Calculator();
         int sum = calculator.sum(1, 10, 123, 234, 6234, 12, 8);
+        System.out.println(sum);
+
+
 
     }
 
 
 }
+
