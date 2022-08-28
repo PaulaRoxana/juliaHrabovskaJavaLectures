@@ -23,6 +23,6 @@ public class Main {
         smartphone.call("+1234567");
         smartphone.ring("+1234567");
         smartphone.install("Android");
-        Integer
+
     }
 }

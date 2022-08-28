@@ -7,7 +7,8 @@ public class WhatsApp implements Messenger {
     }
 
     public void getMessage() {
-        System.out.println("Read a message in WhatsApp!");
+                System.out.println("Read a message in WhatsApp!");
     }
+
 }
 
