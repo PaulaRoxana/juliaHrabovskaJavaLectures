@@ -1,5 +1,18 @@
 package com.epam.varargs;
 
+/*Variable Arguments (Varargs)
+• Varargs are variable length arguments: a feature that appeared in JDK5.
+Varargs allow to create methods with an arbitrary number of arguments.
+- ex1: void print(String... words)
+- ex2: int sum(Integer... numbers)
+Rules:
+1. Vararg argument ends with … .
+2. Vararg can only be specified as an argument to some method.
+3. Each Vararg in the method body is an array.
+4. The vararg argument must be the last one in the method's argument list.
+5. It is not necessary to create an array when calling a method that takes variable
+length arguments. It is enough to simply write a list elements separated by commas*/
+
 public class VarArgs {
     class Calculator1 {
         int sum(int a, int b) {

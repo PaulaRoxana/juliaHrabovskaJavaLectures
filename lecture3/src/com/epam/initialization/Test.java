@@ -1,5 +1,11 @@
 package com.epam.initialization;
 
+/*Initialiazation blocks
+• There are two initialization blocks in Java - normal and static.
+• The block is designed to initialize internal variables. If the block is
+ordinary, then the internal variables of the object are initialized with
+it, if it is static, respectively, they are assigned static variables*/
+
 public class Test {
     static int staticVariable;
     int nonStaticVariable;
