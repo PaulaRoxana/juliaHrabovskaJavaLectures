@@ -6,6 +6,7 @@ import com.epam.test.interfacetest.messenger.Viber;
 import com.epam.test.interfacetest.messenger.WhatsApp;
 
 public class Client {
+    /*we don't need all these fields!!! Think about Shape shape (circle, square, rectangle)*/
 //    private WhatsApp whatsApp;
 //    private Telegram telegram;
 //    private Viber viber;

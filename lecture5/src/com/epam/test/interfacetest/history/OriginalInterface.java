@@ -6,11 +6,11 @@ public interface OriginalInterface {
     int doSomething();
     String doSomethingCompletelyDifferent();
 
-    class MyClass {
+    class MyClass { //inner/nested class
         //...
     }
 
-    interface MyOtherInterface {
+    interface MyOtherInterface { //inner/nested interface
         //...
     }
 }

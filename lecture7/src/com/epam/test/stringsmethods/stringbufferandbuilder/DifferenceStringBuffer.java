@@ -14,8 +14,8 @@ public class DifferenceStringBuffer {
 
     private static void evaluatingStringBuffer() {
         StringBuffer string = new StringBuffer();
-        for (int i = 0; i < 100000000; i++) {
-            string.append(i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(string.append(i));
         }
     }
 }

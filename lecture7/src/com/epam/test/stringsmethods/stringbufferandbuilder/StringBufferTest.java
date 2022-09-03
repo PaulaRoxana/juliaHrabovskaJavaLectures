@@ -12,6 +12,7 @@ public class StringBufferTest {
         for (String string : numbersString) {
             sb.append(string);
         }
+
         String numbers = new String(sb);
 
         System.out.println(sb.substring(3)); // 3456789

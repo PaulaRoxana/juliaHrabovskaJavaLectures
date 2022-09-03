@@ -14,8 +14,8 @@ public class DifferenceStringBuilder {
 
     private static void evaluatingStringBuilder() {
         StringBuilder string = new StringBuilder();
-        for (int i = 0; i < 100000000; i++) {
-            string.append(i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(string.append(i));
         }
     }
 }
