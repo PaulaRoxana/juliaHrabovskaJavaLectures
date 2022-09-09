@@ -5,6 +5,7 @@ public class ConcatAndLength {
         String str1 = "Hello ";
         String str2 = "World!";
         String str3 = str1 + str2;
+//ORDER MATTERS!
         String str4 = str1.concat(str2);
         System.out.println(str3 + str4);
         System.out.println(str3);

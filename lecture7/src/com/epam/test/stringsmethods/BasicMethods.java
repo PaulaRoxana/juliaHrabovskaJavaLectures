@@ -1,9 +1,9 @@
 package com.epam.test.stringsmethods;
 
 /*String objects are IMMUTABLE (not changeable) => we are talking about the String object IN MEMORY!!!;
-When Java creates a String object from a literal {String myString = "John";}, it actually puts that
+When Java creates a String object making use of a literal {String myString = "John";}, it actually puts that
 String object in a String POOL; and every time another String literal is created JAVA will check that
-String POOL to see If that value is already in there
+String POOL to see if that value is already in there
 * The String variables can be changed to point to whatever Strings we want */
 
 public class BasicMethods {

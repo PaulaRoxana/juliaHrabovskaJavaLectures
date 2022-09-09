@@ -8,11 +8,11 @@ public class ConstantPool {
 
         System.out.println("s1 == s2 :" + (s1 == s2)); // true
         System.out.println("s1 == s3 :" + (s1 == s3)); // false
-        String s4 = s3.intern();//being saved in the String pool
-        System.out.println(System.identityHashCode(s1));
-        System.out.println(System.identityHashCode(s2));
-        System.out.println(System.identityHashCode(s3));
-        System.out.println(System.identityHashCode(s4));
+        String s4 = s3.intern();//s3.intern() = memory
+        System.out.println(System.identityHashCode(s1));  //1329552164
+        System.out.println(System.identityHashCode(s2)); //1329552164
+        System.out.println(System.identityHashCode(s3)); //363771819
+        System.out.println(System.identityHashCode(s4)); //1329552164
 
     }
 }

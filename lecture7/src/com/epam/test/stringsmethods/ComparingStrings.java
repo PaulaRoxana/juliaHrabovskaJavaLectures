@@ -12,13 +12,17 @@ public class ComparingStrings {
         //positive: a is after A;
         //negative: the value is before another value
         //0=the same;
-        //!!!ORDER MATTERS
+
         String abc = "abc";
         String cba = "cba";
 
-        System.out.println(a.compareTo(A));
-        System.out.println(a.compareToIgnoreCase(A));
+        //!!!ORDER MATTERS
+        System.out.println(a.compareTo(A));//32; a=97; A=65;
+        System.out.println(A.compareTo(a));//-32; a=97; A=65;
 
-        System.out.println(abc.compareToIgnoreCase(cba));
+        System.out.println(a.compareToIgnoreCase(A));//0
+        System.out.println(A.compareToIgnoreCase(a));//0
+
+        System.out.println(abc.compareToIgnoreCase(cba));//-2
     }
 }

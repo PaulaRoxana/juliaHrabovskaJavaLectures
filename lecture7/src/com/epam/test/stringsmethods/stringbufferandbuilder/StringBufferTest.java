@@ -14,6 +14,7 @@ public class StringBufferTest {
         }
 
         String numbers = new String(sb);
+        System.out.println(numbers);
 
         System.out.println(sb.substring(3)); // 3456789
         System.out.println(sb.substring(4, 8)); // 4567

@@ -7,7 +7,7 @@ public class ValueOf {
         String c = String.valueOf(123.4F);
         String d = String.valueOf(123456L);
         String s = String.valueOf(true);
-//transforming an OBJECT that is not a text in a String:
+//transforming an OBJECT that is not a text into a String:
         String human = String.valueOf(new Human("Alex"));
 
         System.out.println(a);
