@@ -8,7 +8,7 @@ public class ConstantPool {
 
         System.out.println("s1 == s2 :" + (s1 == s2)); // true
         System.out.println("s1 == s3 :" + (s1 == s3)); // false
-        String s4 = s3.intern();
+        String s4 = s3.intern();//being saved in the String pool
         System.out.println(System.identityHashCode(s1));
         System.out.println(System.identityHashCode(s2));
         System.out.println(System.identityHashCode(s3));
