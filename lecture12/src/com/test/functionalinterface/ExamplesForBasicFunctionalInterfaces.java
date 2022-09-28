@@ -37,6 +37,7 @@ public class ExamplesForBasicFunctionalInterfaces {
         nameList.add("Jim");
         nameList.add("Sara");
 
+//variables used in lambda expressions must be final or efficiently final
         Supplier<String> randomName = () -> {
             int value = (int) (Math.random() * nameList.size());
             return nameList.get(value);

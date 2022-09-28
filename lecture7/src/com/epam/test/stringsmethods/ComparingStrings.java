@@ -13,7 +13,7 @@ public class ComparingStrings {
         //negative: the value is before another value
         //0=the same;
 
-        String abc = "abc";
+        String abc = "abidefhxhfxfn";
         String cba = "cba";
 
         //!!!ORDER MATTERS

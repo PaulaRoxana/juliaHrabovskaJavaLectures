@@ -1,4 +1,4 @@
-package com.test.streamapi;
+package com.test.stream_api;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,6 +18,8 @@ public class Practice {
         if (elem.isPresent()) {
             System.out.println(elem.get());
         }
+        elem.ifPresent(System.out::println);
+
 //        Get element which contains "Load"
         collection1.stream().filter(x -> x.contains("Load")).collect(Collectors.toList());
 //        Get first two elements which contain "High"

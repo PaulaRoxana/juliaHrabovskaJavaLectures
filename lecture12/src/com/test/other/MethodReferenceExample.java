@@ -27,7 +27,7 @@ public class MethodReferenceExample {
 
     public static void main(String[] args) {
         Car car = Car.create(Car::new); // reference to a constructor
-//        Car car = Car.create(() -> new Car());
+//       Car car = Car.create(() -> new Car());
 
         List<Car> cars = Arrays.asList(car);
 
@@ -37,7 +37,7 @@ public class MethodReferenceExample {
 //        cars.forEach(c -> c.repair());
 
         Car police = Car.create(Car::new);
-        cars.forEach(police::follow); // reference to an instance method of a certain class
+        cars.forEach(another -> police.follow(another)); // reference to an instance method of a certain class
 //        cars.forEach(c -> police.follow(c));
     }
 }

@@ -28,11 +28,20 @@ public class Movie implements Comparable<Movie> {
         return year;
     }
 
-    public int compareTo(Movie m) {
-        return this.year - m.year;
+    @Override
+//    public int compareTo(Movie o) {
+//        return 0;
+//    }
+    public int compareTo(Movie anotherMovie) {
+        // return  anotherMovie.year-this.year;
+        return this.year - anotherMovie.year;
     }
 
     static class RatingCompare implements Comparator<Movie> {
+        //        @Override
+//        public int compare(Movie o1, Movie o2) {
+//            return 0;
+//        }
         public int compare(Movie m1, Movie m2) {
             return Double.compare(m1.getRating(), m2.getRating());
         }
@@ -40,6 +49,7 @@ public class Movie implements Comparable<Movie> {
 
     static class NameCompare implements Comparator<Movie> {
         public int compare(Movie m1, Movie m2) {
+
             return m1.getName().compareTo(m2.getName());
         }
     }
@@ -47,29 +57,29 @@ public class Movie implements Comparable<Movie> {
 
 class Main {
     public static void main(String[] args) {
-        List<Movie> list = new ArrayList<>();
-        list.add(new Movie("Force Awakens", 8.3, 2015));
-        list.add(new Movie("Star Wars", 8.7, 1977));
-        list.add(new Movie("Empire Strikes Back", 8.8, 1980));
-        list.add(new Movie("Return of the Jedi", 8.4, 1983));
+        List<Movie> listOfMovies = new ArrayList<>();
+        listOfMovies.add(new Movie("Force Awakens", 8.3, 2015));
+        listOfMovies.add(new Movie("Star Wars", 8.7, 1977));
+        listOfMovies.add(new Movie("Empire Strikes Back", 8.8, 1980));
+        listOfMovies.add(new Movie("Return of the Jedi", 8.4, 1983));
 
-//        Collections.sort(list);
-//
-//        System.out.println("Movies after sorting : ");
-//        for (Movie movie : list) {
-//            System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear());
-//        }
+        Collections.sort(listOfMovies);
+
+        System.out.println("Movies after sorting : ");
+        for (Movie movie : listOfMovies) {
+            System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear());
+        }
 
         System.out.println("Sorted by rating");
         Movie.RatingCompare ratingCompare = new Movie.RatingCompare();
-        Collections.sort(list, ratingCompare);
-        for (Movie movie : list)
+        Collections.sort(listOfMovies, ratingCompare);
+        for (Movie movie : listOfMovies)
             System.out.println(movie.getRating() + " " + movie.getName() + " " + movie.getYear());
 
         System.out.println("\nSorted by name");
         Movie.NameCompare nameCompare = new Movie.NameCompare();
-        Collections.sort(list, nameCompare);
-        for (Movie movie : list)
+        Collections.sort(listOfMovies, nameCompare);
+        for (Movie movie : listOfMovies)
             System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear());
     }
 }

@@ -10,12 +10,12 @@ public class IteratorTest {
     }
 
     private static void iterateList() {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> myListToIterate = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            list.add(i);
+            myListToIterate.add(i);
         }
 
-        Iterator<Integer> iterator = list.iterator();
+        Iterator<Integer> iterator = myListToIterate.iterator();
         while (iterator.hasNext()) {
             Integer item = iterator.next();
             System.out.println(item);
@@ -23,18 +23,18 @@ public class IteratorTest {
     }
 
     private static void iterateSet() {
-        TreeSet<String> set = new TreeSet<>();
-        set.add("A");
-        set.add("B");
-        set.add("C");
+        TreeSet<String> setToIterate = new TreeSet<>();
+        setToIterate.add("A");
+        setToIterate.add("B");
+        setToIterate.add("C");
 
-        Iterator<String> iterator = set.iterator();
+        Iterator<String> iterator = setToIterate.iterator();
         while (iterator.hasNext()) {
             String item = iterator.next();
             System.out.println(item);
         }
 
-        for (String item : set) {
+        for (String item : setToIterate) {
             System.out.println(item);
         }
     }

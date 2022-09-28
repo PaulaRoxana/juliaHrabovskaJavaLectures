@@ -1,4 +1,4 @@
-package com.test.streamapi;
+package com.test.stream_api;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

@@ -5,9 +5,9 @@ import java.util.List;
 
 public class LinkedListTest {
     public static void main(String[] args) {
-//        createLinkedList();
-//        addFirstLast();
-//        peekFirstLast();
+        createLinkedList();
+        addFirstLast();
+        peekFirstLast();
         pollFirstLast();
     }
 
@@ -41,49 +41,49 @@ public class LinkedListTest {
     }
 
     private static void addFirstLast() {
-        LinkedList<Car> cars = new LinkedList<>();
+        LinkedList<Car> cars1 = new LinkedList<>();
         Car ferrari = new Car("Ferrari 360 Spider");
         Car bugatti = new Car("Bugatti Veyron");
         Car lambo = new Car("Lamborghini Diablo");
         Car ford = new Car("Ford Mondeo");
         Car fiat = new Car("Fiat Ducato");
 
-        cars.add(ferrari);
-        cars.add(bugatti);
-        cars.add(lambo);
-        System.out.println(cars);
+        cars1.add(ferrari);
+        cars1.add(bugatti);
+        cars1.add(lambo);
+        System.out.println("Cars1=>without addFirstLast: " + cars1);
 
-        cars.addFirst(ford);
-        cars.addLast(fiat);
-        System.out.println(cars);
+        cars1.addFirst(ford);
+        cars1.addLast(fiat);
+        System.out.println("Cars1=>addFirstLast: " + cars1);
     }
 
     private static void peekFirstLast() {
-        LinkedList<Car> cars = new LinkedList<>();
+        LinkedList<Car> cars2 = new LinkedList<>();
         Car ferrari = new Car("Ferrari 360 Spider");
         Car bugatti = new Car("Bugatti Veyron");
         Car lambo = new Car("Lamborghini Diablo");
 
-        cars.add(ferrari);
-        cars.add(bugatti);
-        cars.add(lambo);
-        System.out.println(cars.peekFirst());
-        System.out.println(cars.peekLast());
+        cars2.add(ferrari);
+        cars2.add(bugatti);
+        cars2.add(lambo);
+        System.out.println("Cars2=>peekFirst" + cars2.peekFirst());
+        System.out.println("Cars2=>peekLast" + cars2.peekLast());
     }
 
     private static void pollFirstLast() {
-        LinkedList<Car> cars = new LinkedList<>();
+        LinkedList<Car> cars3 = new LinkedList<>();
         Car ferrari = new Car("Ferrari 360 Spider");
-        Car bugatti = new Car("Bugatti Veyron");
+        Car bugatti = new Car("Bugatti Verona");
         Car lambo = new Car("Lamborghini Diablo");
 
-        cars.add(ferrari);
-        cars.add(bugatti);
-        cars.add(lambo);
-        System.out.println(cars.pollFirst());
-        System.out.println(cars.pollLast());
+        cars3.add(ferrari);
+        cars3.add(bugatti);
+        cars3.add(lambo);
+        System.out.println("Cars3=>pollFirst" + cars3.pollFirst());
+        System.out.println("Cars3=>pollLast" + cars3.pollLast());
 
         System.out.println("What's left on the list?");
-        System.out.println(cars);
+        System.out.println("What's left within Cars3: " + cars3);
     }
 }

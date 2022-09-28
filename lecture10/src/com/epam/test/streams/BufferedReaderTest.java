@@ -30,8 +30,8 @@ public class BufferedReaderTest {
     }
 
     private static void inputStreamReaderExample() {
-        try (InputStreamReader reader = new InputStreamReader(System.in);) {
-            while (true) {
+        try (InputStreamReader reader = new InputStreamReader(System.in);) {// wrap-text(wrap - convert into characters(reads the Bytes))
+            while (true) { //extend the ability of our object
                 int x = reader.read();
                 System.out.println(x);
             }

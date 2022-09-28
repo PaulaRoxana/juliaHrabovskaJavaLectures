@@ -17,7 +17,7 @@ public class IndexOf {
  starting at the specified index.*/
 
         System.out.println(alphabet.lastIndexOf('A'));//23
- //Returns the index within this string of the last occurrence of the specified character.
+        //Returns the index within this string of the last occurrence of the specified character.
 
         System.out.println(alphabet.lastIndexOf("A", 15));
    /*Returns the index within this string of the last occurrence of the specified character,
@@ -28,5 +28,14 @@ public class IndexOf {
         System.out.println(alphabet.indexOf('K'));//11
         System.out.println(alphabet.indexOf('Z'));//27
         System.out.println(alphabet.indexOf('Я'));// -1
+
+        String path = "C:Users\\..\\Cygwin\\";
+        String path2 = "C:\\root\\logs\\end.log\"";
+
+        System.out.println(path.indexOf("C", 3));
+        System.out.println(path2.indexOf("\\\\"));
     }
+
+
 }
+

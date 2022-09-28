@@ -17,9 +17,10 @@ public class DateExamples {
         LocalTime time = LocalTime.now();
         System.out.println(time);
 
-        // get the current date and time
+        // get the current date and time//!!! Work with this one!!!
         LocalDateTime datetime = LocalDateTime.now();
         System.out.println(datetime);
+       // datetime.
 
         // format date
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MMM yyyy");

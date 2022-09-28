@@ -15,15 +15,16 @@ public class GenericMethod {
             strings.add("Old string 1");
             strings.add("Old string 2");
             strings.add("Old string 3");
+//Strings.add("8");
 
             fill(strings, "New string");
-
             System.out.println(strings);
 
             List<Integer> numbers = new ArrayList<>();
             numbers.add(1);
             numbers.add(2);
             numbers.add(3);
+ //numbers.add("a");
 
             fill(numbers, 888);
             System.out.println(numbers);
