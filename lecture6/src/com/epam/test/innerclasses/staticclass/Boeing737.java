@@ -27,6 +27,8 @@ public class Boeing737 {
             return maxPassengersCount;
         }
 
+
+
         @Override
         public String toString() {
             return "Drawing{" +

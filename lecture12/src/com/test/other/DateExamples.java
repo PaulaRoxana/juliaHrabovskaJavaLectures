@@ -12,6 +12,8 @@ public class DateExamples {
         // get the current date
         LocalDate date = LocalDate.now();
         System.out.println(date);
+        LocalDate date1 = LocalDate.now();
+        System.out.println(date1);
 
         // get the current time
         LocalTime time = LocalTime.now();
@@ -24,7 +26,9 @@ public class DateExamples {
 
         // format date
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MMM yyyy");
+        DateTimeFormatter dateFormat1 = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         System.out.println(dateFormat.format(date));
+        System.out.println(dateFormat1.format(date));
 
         // get duration
         LocalDateTime from = LocalDateTime.of(2021, Month.NOVEMBER, 23, 19, 0, 0);

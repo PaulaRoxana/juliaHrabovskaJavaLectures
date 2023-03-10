@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
-import static com.test.other.MethodReferenceExample.Car.collide;
-
 public class MethodReferenceExample {
     public static class Car {
         public static Car create(Supplier<Car> supplier) {
@@ -26,6 +24,7 @@ public class MethodReferenceExample {
     }
 
     public static void main(String[] args) {
+
         Car car = Car.create(Car::new); // reference to a constructor
 //       Car car = Car.create(() -> new Car());
 
@@ -37,7 +36,7 @@ public class MethodReferenceExample {
 //        cars.forEach(c -> c.repair());
 
         Car police = Car.create(Car::new);
-        cars.forEach(another -> police.follow(another)); // reference to an instance method of a certain class
+        cars.forEach(police::follow); // reference to an instance method of a certain class
 //        cars.forEach(c -> police.follow(c));
     }
 }

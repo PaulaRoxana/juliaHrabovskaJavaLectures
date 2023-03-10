@@ -25,7 +25,7 @@ the value of the variable does not change after initialization. In other
 words, the word final can be substituted for such a variable without a
 compilation error.
 • effectively final variables can be used inside local classes (Local Inner
-Classes), anonymous classes (Anonymous Inner Classes), streams
+Classes), anonymous classes (Anonymous Inner Classes), streams (lambda expressions)
 (Stream API)*/
 
 public final class FinalClass {
@@ -52,12 +52,13 @@ public final class FinalClass {
         int c = 10;
         c++;
 
-        Stream.of(1, 2).forEach(s -> System.out.println(s + a)); // no error
-//        Stream.of(1, 2).forEach(s -> System.out.println(s + c)); // compilation error
+        Stream.of(1, 2).forEach(s -> System.out.println(s + a + MAX_AGE)); // no error
+     //  Stream.of(1, 2).forEach(s -> System.out.println(s + c)); // compilation error
     }
 
 
     public final void test() {
         System.out.println("Try to override me :p");
     }
+
 }

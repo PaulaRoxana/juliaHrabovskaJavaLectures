@@ -9,10 +9,10 @@ import java.net.URL;
 
 public class BufferedReaderTest {
     public static void main(String[] args) throws IOException {
-        bufferedReaderExample();
-        systemInExample();
-        inputStreamReaderExample();
-        readFromUriExample();
+     //   bufferedReaderExample();
+     //   systemInExample();
+      //  inputStreamReaderExample();
+    //   readFromUriExample();
         readFromFileExample();
     }
 
